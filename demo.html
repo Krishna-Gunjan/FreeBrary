@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Jake Thayne Stats</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            background-color: #f0f0f0;
+            font-family: Arial, sans-serif;
+        }
+
+        .card {
+            display: flex;
+            height: 14em;
+            width: 14em;
+            flex-direction: column;
+            flex-wrap: wrap;
+            align-items: center;
+            justify-content: start;
+            overflow: hidden;
+            border-radius: 1.5em;
+            transition: width 600ms;
+        }
+
+        .card:hover {
+            width: 34em;
+        }
+
+        .cardleft {
+            position: relative;
+            height: 14em;
+            width: 14em;
+            border-radius: 1.5em 0 0 1.5em;
+            background-color: #FFB7C5;
+        }
+
+        .cardleft-content {
+            position: absolute;
+            bottom: 0.5em;
+            left: 0.75em;
+            display: flex;
+            height: 2.5em;
+            width: fit-content;
+            flex-direction: column;
+            align-items: start;
+            justify-content: start;
+            color: #F5FFFA;
+            transition: height 500ms 200ms;
+        }
+
+        .cardleft-content h1 {
+            font-size: 2em;
+            font-weight: 600;
+        }
+
+        .cardleft-content ul {
+            font-size: 0.75em;
+        }
+
+        .card:hover .cardleft-content {
+            height: 12em;
+        }
+
+        .cardright {
+            position: relative;
+            height: 14em;
+            width: 20em;
+            border-radius: 0 1.5em 1.5em 0;
+            background-color: hsl(174, 53%, 55%);
+            padding: 1em;
+            color: #F5FFFA;
+        }
+
+        .icon-container {
+            position: absolute;
+            right: 0.5em;
+            top: 0.5em;
+            display: flex;
+            height: 2em;
+            width: 2em;
+            align-items: center;
+            justify-content: center;
+            border-radius: 50%;
+            background-color: white;
+        }
+
+        .heart-icon {
+            height: 1.5em;
+            width: 1.5em;
+            transition: transform 200ms, fill 200ms;
+        }
+
+        .heart-icon:hover {
+            transform: translateY(5%);
+            fill: hsl(174, 53%, 40%);
+        }
+
+        .cardright h1 {
+            font-size: 1.5em;
+            font-weight: 600;
+        }
+
+        .cardright p {
+            font-size: 0.8em;
+            font-weight: 300;
+        }
+    </style>
+</head>
+<body>
+    <div class="card">
+        <div class="cardleft">
+            <div class="cardleft-content">
+                <h1>Jake Thayne</h1>
+                <ul>
+                    <li>Strength: 6649</li>
+                    <li>Agility: 11568</li>
+                    <li>Mana: Details not provided</li>
+                    <li>Wisdom: Enhanced by Arcane Barrier</li>
+                    <li>Endurance: Enhanced by Arcane Barrier</li>
+                </ul>
+            </div>
+        </div>
+        <div class="cardright">
+            <div class="icon-container">
+                <svg class="heart-icon" stroke="hsl(174,53%,40%)" stroke-width="1.5" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M21 8.25c0-2.485-2.099-4.5-4.688-4.5-1.935 0-3.597 1.126-4.312 2.733-.715-1.607-2.377-2.733-4.313-2.733C5.1 3.75 3 5.765 3 8.25c0 7.22 9 12 9 12s9-4.78 9-12Z" stroke-linejoin="round" stroke-linecap="round"></path>
+                </svg>
+            </div>
+            <h1>Skills</h1>
+            <p>
+                <strong>Class Skills:</strong> Path of the Heretic-Chosen (Unique), Grimoire of the Heretic-Chosen (Unique), Arcane Powershot, Barrier of the Avaricious Arcane Hunter (Epic), Stealth Attack (Common).<br>
+                <strong>Profession Skills:</strong> Alchemist’s Purification (Inferior), Soul Ritualism of the Heretic-Chosen Alchemist (Epic), Blood of the Malefic Viper (Legendary), Sagacity of the Malefic Viper (Legendary).<br>
+                <strong>Race Skills:</strong> Endless Tongues of the Myriad Races (Unique), Wisdom of the Hunter (Unique), Shroud of the Primordial (Divine).<br>
+                <strong>Blessings:</strong> True Blessing of the Malefic Viper (Blessing - True).
+            </p>
+        </div>
+    </div>
+</body>
+</html>
