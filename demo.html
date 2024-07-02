@@ -22,8 +22,8 @@
 
         .card {
             display: flex;
-            height: 14em;
-            width: 14em;
+            height: 30em; 
+            width: 30em; 
             flex-direction: column;
             flex-wrap: wrap;
             align-items: center;
@@ -34,15 +34,17 @@
         }
 
         .card:hover {
-            width: 34em;
+            width: 60em;
         }
 
         .cardleft {
             position: relative;
-            height: 14em;
-            width: 14em;
+            height: 30em; 
+            width: 30em; 
             border-radius: 1.5em 0 0 1.5em;
-            background-color: #FFB7C5;
+            background: url('demo.jpg');
+            background-size: cover;
+            background-position: center;
         }
 
         .cardleft-content {
@@ -50,8 +52,10 @@
             bottom: 0.5em;
             left: 0.75em;
             display: flex;
-            height: 2.5em;
+            height: fit-content;
             width: fit-content;
+            padding-right: 10px;
+            padding-bottom: 10px;
             flex-direction: column;
             align-items: start;
             justify-content: start;
@@ -60,22 +64,18 @@
         }
 
         .cardleft-content h1 {
-            font-size: 2em;
+            font-size: 3em; 
             font-weight: 600;
         }
 
         .cardleft-content ul {
-            font-size: 0.75em;
-        }
-
-        .card:hover .cardleft-content {
-            height: 12em;
+            font-size: 1.5em;
         }
 
         .cardright {
             position: relative;
-            height: 14em;
-            width: 20em;
+            height: 30em;
+            width: 60em;
             border-radius: 0 1.5em 1.5em 0;
             background-color: hsl(174, 53%, 55%);
             padding: 1em;
@@ -93,6 +93,7 @@
             justify-content: center;
             border-radius: 50%;
             background-color: white;
+            padding-right: 10px;
         }
 
         .heart-icon {
@@ -107,15 +108,16 @@
         }
 
         .cardright h1 {
-            font-size: 1.5em;
+            font-size: 2.5em;
             font-weight: 600;
         }
 
         .cardright p {
-            font-size: 0.8em;
+            font-size: 1.5em;
             font-weight: 300;
         }
     </style>
+
 </head>
 <body>
     <div class="card">
@@ -123,11 +125,9 @@
             <div class="cardleft-content">
                 <h1>Jake Thayne</h1>
                 <ul>
-                    <li>Strength: 6649</li>
-                    <li>Agility: 11568</li>
-                    <li>Mana: Details not provided</li>
-                    <li>Wisdom: Enhanced by Arcane Barrier</li>
-                    <li>Endurance: Enhanced by Arcane Barrier</li>
+                    <li><strong><i>The Primal Hunter</i></strong></li>
+                    <li><strong>Class: </strong><i>Path of the Heretic-Chosen</i></li>
+                    <li><strong>Profession: </strong><i>Heretic-Chosen Alchemist of the Malefic Viper</i></li>
                 </ul>
             </div>
         </div>
@@ -139,10 +139,17 @@
             </div>
             <h1>Skills</h1>
             <p>
-                <strong>Class Skills:</strong> Path of the Heretic-Chosen (Unique), Grimoire of the Heretic-Chosen (Unique), Arcane Powershot, Barrier of the Avaricious Arcane Hunter (Epic), Stealth Attack (Common).<br>
-                <strong>Profession Skills:</strong> Alchemist’s Purification (Inferior), Soul Ritualism of the Heretic-Chosen Alchemist (Epic), Blood of the Malefic Viper (Legendary), Sagacity of the Malefic Viper (Legendary).<br>
-                <strong>Race Skills:</strong> Endless Tongues of the Myriad Races (Unique), Wisdom of the Hunter (Unique), Shroud of the Primordial (Divine).<br>
-                <strong>Blessings:</strong> True Blessing of the Malefic Viper (Blessing - True).
+                <ul>
+                    <li><strong>Health Points: 10710</strong></li>
+                    <li><strong>Mana Points: 12150</strong></li>
+                    <li><strong>Stamina: 8220</strong></li>
+                    <li><strong>Strength: 638</strong></li>
+                    <li><strong></strong></li>
+                    <li><strong></strong></li>
+                    <li><strong></strong></li>
+                    <li><strong></strong></li>
+                    <li><strong></strong></li>
+                </ul>
             </p>
         </div>
     </div>
